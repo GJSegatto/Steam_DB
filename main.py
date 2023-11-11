@@ -1,8 +1,32 @@
-import psycopg2
+from Funcao import funcoes as fc
 
-import psycopg2
-cnx = psycopg2.connect(host='localhost', port='5432', database='Steam', user='postgres', password='teste123')
-cursor = cnx.cursor()
-cnx.autocommit = False
+try:
+    fc.inicializacao()
+    opcao = 1
 
-cursor.close()
+    while opcao != 0:
+        fc.menu()
+        opcao = int(input("Selecione um numero: "))
+
+        if opcao == 0:
+            fc.fechamento()
+        elif opcao == 1:
+            fc.criaTabelas() 
+        elif opcao == 2:
+            fc.op2()   
+        elif opcao == 3:
+            fc.op3()    
+        elif opcao == 4:
+            fc.op4()    
+        elif opcao == 5:
+            fc.op5()    
+        elif opcao == 6:
+            fc.op6()   
+        elif opcao == 7:
+            print("n tem 7 ainda")   
+        else:
+            print("Escolha um valor entre 0 e 7.")
+
+except fc.psycopg2.Error as err:
+    print("Não foi possível se conectar ao Banco de Dados devido ao seguinte erro: \n", err.args)
+
