@@ -13,9 +13,9 @@ try:
         elif opcao == 1:
             fc.criaTabelas() 
         elif opcao == 2:
-            fc.op2()   
+            fc.drop_tabelas()   
         elif opcao == 3:
-            fc.op3()    
+            fc.insert_valores()    
         elif opcao == 4:
             fc.op4()    
         elif opcao == 5:

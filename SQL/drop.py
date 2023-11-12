@@ -1,0 +1,20 @@
+drop = {
+    "amigo" : ("DROP TABLE IF EXISTS amigo"),
+    "raridade" : ("DROP TABLE IF EXISTS raridade"),
+    "item_raridade" : ("DROP TABLE IF EXISTS item_raridade"),
+    "item" : ("DROP TABLE IF EXISTS item"),
+    "midia" : ("DROP TABLE IF EXISTS midia"),
+    "avaliacao" : ("DROP TABLE IF EXISTS avaliacao"),
+    "compra_jogo" : ("DROP TABLE IF EXISTS compra_jogo"),
+    "compra_expansao" : ("DROP TABLE IF EXISTS compra_expansao"),
+    "jogo_genero" : ("DROP TABLE IF EXISTS jogo_genero"),
+    "genero" : ("DROP TABLE IF EXISTS genero"),
+    "expansao" : ("DROP TABLE IF EXISTS expansao"),
+    "jogo_promocao" : ("DROP TABLE IF EXISTS jogo_promocao"),
+    "promocao" : ("DROP TABLE IF EXISTS promocao"),
+    "conquista" : ("DROP TABLE IF EXISTS conquista"),
+    "compra" : ("DROP TABLE IF EXISTS compra"),
+    "usuario" : ("DROP TABLE IF EXISTS usuario"),
+    "jogo" : ("DROP TABLE IF EXISTS jogo"),
+    "desenvolvedor" : ("DROP TABLE IF EXISTS desenvolvedor")
+}

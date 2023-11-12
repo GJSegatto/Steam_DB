@@ -1,4 +1,4 @@
-tabelas = {
+create = {
     "usuario" : ("""
         CREATE TABLE usuario (
 	    id_usuario serial PRIMARY KEY,
@@ -12,9 +12,9 @@ tabelas = {
     """),
     "desenvolvedor" : ("""
         CREATE TABLE desenvolvedor (
-	    id_dev integer PRIMARY KEY,
+	    id_dev serial PRIMARY KEY,
 	    nome varchar(50) NOT NULL UNIQUE,
-	    descricao varchar(200)
+	    descricao varchar(500)
     );
     """),
     "amigo" : ("""
@@ -33,16 +33,16 @@ tabelas = {
     """),
     "raridade" : ("""
         CREATE TABLE raridade (
-        id_raridade integer PRIMARY KEY,
+        id_raridade serial PRIMARY KEY,
         nome varchar(50) NOT NULL
         );
     """),
     "jogo" : ("""
         CREATE TABLE jogo (
-	    id_jogo integer PRIMARY KEY,
+	    id_jogo serial PRIMARY KEY,
 	    id_dev integer REFERENCES desenvolvedor (id_dev),
 	    nome varchar(100) NOT NULL,
-	    descricao varchar(150),
+	    descricao varchar(500),
 	    valor numeric NOT NULL,
 	    data_lancamento date NOT NULL
         );
@@ -58,7 +58,7 @@ tabelas = {
     """),
     "item" : ("""
         CREATE TABLE item (
-        id_item integer PRIMARY KEY,
+        id_item serial PRIMARY KEY,
         id_usuario integer REFERENCES usuario(id_usuario),
         id_jogo integer REFERENCES jogo(id_jogo),
         tipo varchar(50) NOT NULL,
@@ -97,7 +97,7 @@ tabelas = {
     """),
     "conquista" : ("""
         CREATE TABLE conquista (
-	    id_conquista integer,
+	    id_conquista serial,
 	    id_usuario integer REFERENCES usuario (id_usuario),
 	    id_jogo integer REFERENCES jogo (id_jogo),
 	    nome varchar(50) NOT NULL,
