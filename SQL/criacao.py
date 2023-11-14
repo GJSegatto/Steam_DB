@@ -26,7 +26,7 @@ create = {
     """),
     "compra" : ("""
         CREATE TABLE compra (
-	    id_compra serial PRIMARY KEY,
+	    id_compra integer PRIMARY KEY,
 	    id_usuario integer REFERENCES usuario (id_usuario),
 	    valor numeric NOT NULL
         );
@@ -44,15 +44,15 @@ create = {
 	    nome varchar(100) NOT NULL,
 	    descricao varchar(500),
 	    valor numeric NOT NULL,
+        comprovante varchar(50) UNIQUE,
 	    data_lancamento date NOT NULL
         );
     """),
     "compra_jogo" : ("""
         CREATE TABLE compra_jogo (
-        id_jogo integer REFERENCES jogo (id_jogo),
         id_compra integer REFERENCES compra (id_compra),
+        id_jogo integer REFERENCES jogo (id_jogo),
         data_compra timestamp NOT NULL,
-        comprovante varchar(50) NOT NULL UNIQUE,
         PRIMARY KEY(id_jogo, id_compra)
         );
     """),
@@ -133,7 +133,7 @@ create = {
     """),
     "expansao" : ("""
         CREATE TABLE expansao (
-        id_expansao serial PRIMARY KEY,
+        id_expansao integer PRIMARY KEY,
         id_jogo integer REFERENCES jogo (id_jogo),
         nome varchar(100) NOT NULL,
         descricao varchar(500),
@@ -145,7 +145,6 @@ create = {
         id_compra integer REFERENCES compra (id_compra),
         id_expansao integer REFERENCES expansao (id_expansao),
         data_compra timestamp NOT NULL,
-        comprovante varchar(50) NOT NULL,
         PRIMARY KEY(id_compra,id_expansao)
         );
     """),

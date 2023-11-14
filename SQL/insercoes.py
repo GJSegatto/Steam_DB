@@ -92,7 +92,7 @@ insercao = {
         INSERT INTO jogo VALUES (1009, 9, 'Grand Theft Auto V', 'Grand Theft Auto V para PC oferece aos jogadores a opção de explorar o gigantesco e premiado mundo de Los Santos e Blaine County em resoluções de até 4K e além, assim como a chance de experimentar o jogo rodando a 60 FPS (quadros por segundo).', 90.99, '2013-09-17');
         INSERT INTO jogo VALUES (1010, 10, 'FINAL FANTASY VII REMAKE INTERGRADE', 'Cloud Strife, ex-agente da SOLDIER, chega a Midgar, a cidade movida a energia de mako. O clássico atemporal FINAL FANTASY VII renasceu, com gráficos de última geração, um novo sistema de combate e uma aventura adicional com Yuffie Kisaragi.', 349.90, '2022-06-17');
         INSERT INTO jogo VALUES (1011, 11, 'DEATH STRANDING DIRECTORS CUT', 'Do lendário criador de jogos Hideo Kojima, surge uma experiência totalmente inédita que desafia o gênero. Sam Bridges precisa enfrentar um mundo profundamente transformado pelo Death Stranding. Carregando os restos desconectados do nosso futuro em suas mãos, ele embarca em uma jornada para reconectar o mundo destruído.', 159.00, '2022-03-30');
-        INSERT INTO jogo VALUES (1012, 12, 'The Witcher® 3: Wild Hunt', 'The Witcher 3: Wild Hunt é um jogo eletrônico de RPG de ação em mundo aberto desenvolvido pela CD Projekt RED e lançado no dia 19 de maio de 2015 para as plataformas Microsoft Windows, PlayStation 4, Xbox One e em outubro de 2019 para o Nintendo Switch, sendo o terceiro título da série de jogos The Witcher. ', 129.99, '2015-05-18');
+        INSERT INTO jogo VALUE, 12, 'The Witcher® 3: Wild Hunt', 'The Witcher 3: Wild Hunt é um jogo eletrônico de RPG de ação em mundo aberto desenvolvido pela CD Projekt RED e lançado no dia 19 de maio de 2015 para as plataformas Microsoft Windows, PlayStation 4, Xbox One e em outubro de 2019 para o Nintendo Switch, sendo o terceiro título da série de jogos The Witcher. ', 129.99, '2015-05-18');
         INSERT INTO jogo VALUES (1013, 13, 'Half-Life 2', 'Half-Life 2 (estilizado como HλLF-LIFE2) é um jogo de tiro em primeira pessoa, lançado em 2004 pela Valve Corporation. Trazendo diversas inovações para o campo dos games, Half-Life 2 logo se tornou um enorme sucesso de vendas e de crítica, ganhando vários prêmios importantes e sendo inclusive amplamente aclamado como o "Jogo do Ano" e, posteriormente, como o "Jogo da Década".', 32.99, '2004-11-16');
         INSERT INTO jogo VALUES (1014, 14, 'Horizon Forbidden West', 'Horizon Forbidden West é um jogo eletrônico de RPG de ação desenvolvido pela Guerrilla Games e publicado pela Sony Interactive Entertainment.', 299.90, '2022-02-18');
         INSERT INTO jogo VALUES (1015, 15, 'Anthem', 'Anthem é um jogo eletrônico de RPG de ação multijogador desenvolvido pela BioWare e publicado pela Electronic Arts.', 44, '2022-02-19');
@@ -114,22 +114,22 @@ insercao = {
         INSERT INTO promocao VALUES (default, 'Aniversário da Plataforma', 'Comemore o aniversário da plataforma, e quem recebe os presentes é você, que nos faz melhores a cada ano!');
     """),
     "expansao" : ("""
-        INSERT INTO expansao VALUES (default, 1009, 'Grand Theft Auto V - Criminal Enterprise Starter Pack', 'Requer Grand Theft Auto V no Steamzera para ser acessado.', 18.9);
-        INSERT INTO expansao VALUES (default, 1002, 'Grounded (Original Soundtrack)', 'The Grounded Official Soundtrack contains 34 tracks from Year 1 and Year 2 of the games Early Access development period, combined Track files are in WAV format, 44.1 kHz, 16-bit depth.', 20.69);
-        INSERT INTO expansao VALUES (default, 1012, 'The Witcher 3: Wild Hunt - Hearts of Stone', 'Requer The Witcher® 3: Wild Hunt no Steamzera para ser acessado.', 29.99);
-        INSERT INTO expansao VALUES (default, 1003, 'New World: Rise of the Angry Earth', 'Uma nova ameaça paira sobre terras até então familiares. Empunhe uma nova arma, descubra uma nova habilidade e faça novos aliados na forma de montarias para lutar contra um risco crescente que ameaça aniquilar Aeternum!', 88.99);
-        INSERT INTO expansao VALUES (default, 1012, 'The Witcher 3: Wild Hunt Soundtrack', 'Conteúdo adicional para The Witcher® 3: Wild Hunt. Não inclui o jogo.', 22.79);
-        INSERT INTO expansao VALUES (default, 1011, 'DEATH STRANDING Digital Artbook', 'Requer DEATH STRANDING DIRECTORS CUT no Steam para ser acessado.', 0);
-        INSERT INTO expansao VALUES (default, 1006, 'Overwatch® 2 - Oferta Invasão', 'Requer Overwatch® 2 no Steam para ser acessado.', 69);
-        INSERT INTO expansao VALUES (default, 1006, 'Overwatch® 2 - 5.000 Moedas de Overwatch (+2.500 de bônus)', 'Requer Overwatch® 2 no Steam para ser acessado.', 230);
-        INSERT INTO expansao VALUES (default, 1016, 'League of Legends - 400 Riot Points', 'Receba 400 Riot Points', 10.90);
-        INSERT INTO expansao VALUES (default, 1016, 'League of Legends - 1380 Riot Points', 'Receba 1275 + 105 Riot Points.', 34.90);
-        INSERT INTO expansao VALUES (default, 1016, 'League of Legends - 2800 Riot Points', 'Receba 2575 + 225 Riot Points.', 69.90);
-        INSERT INTO expansao VALUES (default, 1016, 'League of Legends - 5075 Riot Points', 'Receba 4575 + 500 Riot Points.', 124.90);
-        INSERT INTO expansao VALUES (default, 1016, 'League of Legends - 7200 Riot Points', 'Receba 6425 + 775 Riot Points.', 174.90);
-        INSERT INTO expansao VALUES (default, 1016, 'League of Legends - 15000 Riot Points', 'Receba 12850 + 2150 Riot Points.', 349.90);
-        INSERT INTO expansao VALUES (default, 1021, 'Resident Evil 3 Special Soundtrack', 'Conteúdo adicional para Resident Evil 3. Não inclui o jogo.', 56.99);
-        INSERT INTO expansao VALUES (default, 1007, 'Mario Kart™ 8 Deluxe – Passe de pistas adicionais', 'Corra em mais pistas e obtenha mais opções de personagens com o conteúdo extra da licença Mario Kart™ 8 Deluxe – Passe de pistas adicionais', 128);
+        INSERT INTO expansao VALUES (5001, 1009, 'Grand Theft Auto V - Criminal Enterprise Starter Pack', 'Requer Grand Theft Auto V no Steamzera para ser acessado.', 18.9);
+        INSERT INTO expansao VALUES (5002, 1002, 'Grounded (Original Soundtrack)', 'The Grounded Official Soundtrack contains 34 tracks from Year 1 and Year 2 of the games Early Access development period, combined Track files are in WAV format, 44.1 kHz, 16-bit depth.', 20.69);
+        INSERT INTO expansao VALUES (5003, 1012, 'The Witcher 3: Wild Hunt - Hearts of Stone', 'Requer The Witcher® 3: Wild Hunt no Steamzera para ser acessado.', 29.99);
+        INSERT INTO expansao VALUES (5004, 1003, 'New World: Rise of the Angry Earth', 'Uma nova ameaça paira sobre terras até então familiares. Empunhe uma nova arma, descubra uma nova habilidade e faça novos aliados na forma de montarias para lutar contra um risco crescente que ameaça aniquilar Aeternum!', 88.99);
+        INSERT INTO expansao VALUES (5005, 1012, 'The Witcher 3: Wild Hunt Soundtrack', 'Conteúdo adicional para The Witcher® 3: Wild Hunt. Não inclui o jogo.', 22.79);
+        INSERT INTO expansao VALUES (5006, 1011, 'DEATH STRANDING Digital Artbook', 'Requer DEATH STRANDING DIRECTORS CUT no Steam para ser acessado.', 0);
+        INSERT INTO expansao VALUES (5007, 1006, 'Overwatch® 2 - Oferta Invasão', 'Requer Overwatch® 2 no Steam para ser acessado.', 69);
+        INSERT INTO expansao VALUES (5008, 1006, 'Overwatch® 2 - 5.000 Moedas de Overwatch (+2.500 de bônus)', 'Requer Overwatch® 2 no Steam para ser acessado.', 230);
+        INSERT INTO expansao VALUES (5009, 1016, 'League of Legends - 400 Riot Points', 'Receba 400 Riot Points', 10.90);
+        INSERT INTO expansao VALUES (5010, 1016, 'League of Legends - 1380 Riot Points', 'Receba 1275 + 105 Riot Points.', 34.90);
+        INSERT INTO expansao VALUES (5011, 1016, 'League of Legends - 2800 Riot Points', 'Receba 2575 + 225 Riot Points.', 69.90);
+        INSERT INTO expansao VALUES (5012, 1016, 'League of Legends - 5075 Riot Points', 'Receba 4575 + 500 Riot Points.', 124.90);
+        INSERT INTO expansao VALUES (5013, 1016, 'League of Legends - 7200 Riot Points', 'Receba 6425 + 775 Riot Points.', 174.90);
+        INSERT INTO expansao VALUES (5014, 1016, 'League of Legends - 15000 Riot Points', 'Receba 12850 + 2150 Riot Points.', 349.90);
+        INSERT INTO expansao VALUES (5015, 1021, 'Resident Evil 3 Special Soundtrack', 'Conteúdo adicional para Resident Evil 3. Não inclui o jogo.', 56.99);
+        INSERT INTO expansao VALUES (5016, 1007, 'Mario Kart™ 8 Deluxe – Passe de pistas adicionais', 'Corra em mais pistas e obtenha mais opções de personagens com o conteúdo extra da licença Mario Kart™ 8 Deluxe – Passe de pistas adicionais', 128);
     """),
     "item" : ("""
         INSERT INTO item VALUES (default, 50009, 1002, 'Skin/Roupa', NULL, 'Roupa Florida de Primavera');
@@ -233,5 +233,52 @@ insercao = {
     """),
     "midia" : ("""
         INSERT INTO midia VALUES(default, 1017, 'Imagem');
-    """)
+    """),
+    "compra" : ("""
+        INSERT INTO compra VALUES (100001, 50001, 182.77, 'Comprov_1'); 
+        INSERT INTO compra VALUES (100002, 50002, 201.99, 'Comprov_2');
+        INSERT INTO compra VALUES (100003, 50003, 49.99, 'Comprov_3');
+        INSERT INTO compra VALUES (100004, 50004, 427, 'Comprov_4');
+        INSERT INTO compra VALUES (100005, 50005, 0, 'Comprov_5');
+        INSERT INTO compra VALUES (100006, 50006, 44, 'Comprov_6');
+        INSERT INTO compra VALUES (100007, 50007, 0, 'Comprov_7');
+        INSERT INTO compra VALUES (100008, 50008, 159, 'Comprov_8');
+        INSERT INTO compra VALUES (100009, 50009, 0, 'Comprov_9');
+        INSERT INTO compra VALUES (100010, 50010, 0, 'Comprov_10');
+        INSERT INTO compra VALUES (100011, 50001, 349.90, 'Comprov_11');
+        INSERT INTO compra VALUES (100012, 50002, 0, 'Comprov_12');
+        INSERT INTO compra VALUES (100013, 50003, 159.80, 'Comprov_13');
+        INSERT INTO compra VALUES (100018, 50003, 0, 'Comprov_14');
+        INSERT INTO compra VALUES (100014, 50004, 0, 'Comprov_15');
+        INSERT INTO compra VALUES (100015, 50005, 0, 'Comprov_16');
+        INSERT INTO compra VALUES (100016, 50006, 123.98, 'Comprov_17');
+        INSERT INTO compra VALUES (100017, 50007, 0, 'Comprov_18');
+    """),
+    "compra_expansao" : ("""
+        INSERT INTO compra_expansao VALUES (100001, 5003, '2020-10-22 10:43:05');
+        INSERT INTO compra_expansao VALUES (100001, 5005, '2020-10-22 10:43:05');
+        INSERT INTO compra_expansao VALUES (100004, 5016, '2023-01-03 22:10:55');
+        INSERT INTO compra_expansao VALUES (100008, 5006, '2022-06-22 15:00:00');
+        INSERT INTO compra_expansao VALUES (100013, 5012, '2023-03-15 03:10:43');
+        INSERT INTO compra_expansao VALUES (100013, 5010, '2023-03-15 03:10:43');
+    """),
+    "compra_jogo" : ("""
+        INSERT INTO compra_jogo VALUES (100001, 1012, '2020-10-22 10:43:05');
+        INSERT INTO compra_jogo VALUES (100002, 1003, '2023-08-10 23:59:43');
+        INSERT INTO compra_jogo VALUES (100003, 1004, '2023-10-05 00:10:40');
+        INSERT INTO compra_jogo VALUES (100004, 1007, '2023-01-03 22:10:55');
+        INSERT INTO compra_jogo VALUES (100005, 1020, '2020-01-13 15:49:53');
+        INSERT INTO compra_jogo VALUES (100006, 1015, '2021-02-01 01:20:30');
+        INSERT INTO compra_jogo VALUES (100007, 1001, '2022-11-10 20:20:23');
+        INSERT INTO compra_jogo VALUES (100008, 1011, '2022-06-22 15:00:00');
+        INSERT INTO compra_jogo VALUES (100009, 1019, '2020-12-23 00:15:30');
+        INSERT INTO compra_jogo VALUES (100010, 1020, '2021-04-23 01:36:23');
+        INSERT INTO compra_jogo VALUES (100011, 1010, '2022-05-21 15:48:31');
+        INSERT INTO compra_jogo VALUES (100012, 1006, '2020-08-12 10:05:26');
+        INSERT INTO compra_jogo VALUES (100013, 1016, '2023-03-15 03:10:43');
+        INSERT INTO compra_jogo VALUES (100014, 1020, '2021-07-23 18:10:49');
+        INSERT INTO compra_jogo VALUES (100016, 1013, '2021-03-15 20:24:36');
+        INSERT INTO compra_jogo VALUES (100016, 1009, '2021-03-15 20:24:36');
+        INSERT INTO compra_jogo VALUES (100017, 1001, '2023-11-14 16:01:50');
+    """),
 }
