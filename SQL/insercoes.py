@@ -14,13 +14,13 @@ insercao = {
         INSERT INTO usuario VALUES (50010, 'Shockwavex', 'shock.wave.x@gmail.com', 'senhasegura10', 'Guilherme Senn', 'Player recluso de dota e bdo', 11);         
     """),
     "raridade" : ("""
-        INSERT INTO raridade VALUES (default, 'Comum');
-        INSERT INTO raridade VALUES (default, 'Incomum');
-        INSERT INTO raridade VALUES (default, 'Raro');
-        INSERT INTO raridade VALUES (default, 'Épico');
-        INSERT INTO raridade VALUES (default, 'Mítico');
-        INSERT INTO raridade VALUES (default, 'Nomeado');
-        INSERT INTO raridade VALUES (default, 'Único');
+        INSERT INTO raridade VALUES (1, 'Comum');
+        INSERT INTO raridade VALUES (2, 'Incomum');
+        INSERT INTO raridade VALUES (3, 'Raro');
+        INSERT INTO raridade VALUES (4, 'Épico');
+        INSERT INTO raridade VALUES (5, 'Mítico');
+        INSERT INTO raridade VALUES (6, 'Nomeado');
+        INSERT INTO raridade VALUES (7, 'Único');
     """),
     "genero" : ("""
         INSERT INTO genero VALUES (100, 'Ação e Aventura');
@@ -29,10 +29,12 @@ insercao = {
         INSERT INTO genero VALUES (103, 'Hack and Slash');
         INSERT INTO genero VALUES (104, 'Luta e Artes Marciais');
         INSERT INTO genero VALUES (105, 'Roguelike');
+        INSERT INTO genero VALUES (106, 'RPG de Ação');
         INSERT INTO genero VALUES (200, 'Tiro em Primeira Pessoa (FPS)');
         INSERT INTO genero VALUES (201, 'Tiro em Terceira Pessoa');
         INSERT INTO genero VALUES (202, 'Shoot em Up');
         INSERT INTO genero VALUES (203, 'Militar');
+        INSERT INTO genero VALUES (204, 'Battle Royale');
         INSERT INTO genero VALUES (300, 'Estratégia');
         INSERT INTO genero VALUES (301, 'Cidades e Colônias');
         INSERT INTO genero VALUES (302, 'Defesa de Torres');
@@ -40,6 +42,7 @@ insercao = {
         INSERT INTO genero VALUES (304, 'Estratégia em Tempo Real (RTS)');
         INSERT INTO genero VALUES (305, 'Grande Estratégia e 4X');
         INSERT INTO genero VALUES (306, 'Construção e Automação');
+        INSERT INTO genero VALUES (307, 'MOBA');
         INSERT INTO genero VALUES (400, 'Simulação');
         INSERT INTO genero VALUES (401, 'Vida e Imersivos');
         INSERT INTO genero VALUES (402, 'Simuladores Automobilísticos');
@@ -58,27 +61,27 @@ insercao = {
         INSERT INTO genero VALUES (602, 'Encontros');
     """),
     "desenvolvedor" : ("""
-        INSERT INTO desenvolvedor VALUES (default, 'NCSOFT', 'A NCSoft Corporation é uma desenvolvedora e publicadora sul-coreana de jogos eletrônicos sediada em Seongnam, Região Metropolitana de Seul. Foi fundada em março de 1997 por Taek Jin Kim e é a empresa responsável por títulos como Lineage, Guild Wars e Blade & Soul.');
-        INSERT INTO desenvolvedor VALUES (default, 'Obsidian Entertainment', 'Obsidian Entertainment é uma desenvolvedora de jogos eletrônicos americana fundada em 2003 após a desativação da Black Isle Studios, desenvolvedora da Interplay Entertainment.');
-        INSERT INTO desenvolvedor VALUES (default, 'Amazon Games', 'Amazon Game Studios é um estúdio de desenvolvedor de jogos eletrônicos, pertencente à Amazon.com.');
-        INSERT INTO desenvolvedor VALUES (default, 'Devolver', 'A Devolver Digital Inc. é uma publicadora de jogos eletrônicos estadunidense sediada em Austin, Texas, se especializando na publicação de jogos independentes.');
-        INSERT INTO desenvolvedor VALUES (default, 'EA', 'Eletronic Arts Inc. é uma empresa de jogos eletrônicos sediada em Redwood City, Califórnia. Fundada em maio de 1982 por Trip Hawkins.');
-        INSERT INTO desenvolvedor VALUES (default, 'Blizzard', 'Blizzard Entertainment é uma editora e desenvolvedora de videojogos americana tendo sua sede na cidade de Irvine, California. A companhia é uma subsidiária da Activision Blizzard e foi fundada em 8 de fevereiro de 1991.');
-        INSERT INTO desenvolvedor VALUES (default, 'Nintendo', 'A Nintendo Co., Ltd. é uma desenvolvedora e publicadora japonesa de jogos eletrônicos e consoles sediada em Quioto.');
-        INSERT INTO desenvolvedor VALUES (default, 'Ubisoft', 'Ubisoft Entertainment é uma empresa francesa de jogos eletrônicos com sede no subúrbio de Montreuil, em Paris, com vários estúdios de desenvolvimento em todo o mundo.');
-        INSERT INTO desenvolvedor VALUES (default, 'Rockstar Games', 'Rockstar Games, Inc. é uma produtora e publicadora de jogos eletrônicos fundada em 1994. Conhecida por ter criado grandes nomes dos jogos eletrônicos, a Rockstar é criadora das famosas séries Grand Theft Auto, Red Dead, Midnight Club, Bully, Max Payne e Manhunt.');
-        INSERT INTO desenvolvedor VALUES (default, 'Square Enix', 'A Square Enix Holdings Co., Ltd. é uma desenvolvedora e publicadora japonesa de jogos eletrônicos sediada em Tóquio. Ela é mais conhecida por suas franquias de RPGs eletrônicos, que incluem Final Fantasy, Dragon Quest e Kingdom Hearts.');
-        INSERT INTO desenvolvedor VALUES (default, 'Kojima Productions', 'A Kojima Productions Co., Ltd. é um estúdio japonês de desenvolvimento de videojogos, fundado por Hideo Kojima, criador da popular série Metal Gear.');
-        INSERT INTO desenvolvedor VALUES (default, 'CD Projekt Red', 'A CD Projekt S.A. é uma desenvolvedora e publicadora de jogos eletrônicos polonesa sediada em Varsóvia, Mazóvia. A companhia foi fundada em maio de 1994 por Marcin Iwiński e Michał Kiciński.');
-        INSERT INTO desenvolvedor VALUES (default, 'Valve Corporation', 'Valve Corporation é uma empresa norte-americana desenvolvedora de jogos eletrônicos e de distribuição digital, com sede em Bellevue, Washington, Estados Unidos.');
-        INSERT INTO desenvolvedor VALUES (default, 'Guerrilla Games', 'A Guerrilla B.V. é uma desenvolvedora holandesa de jogos eletrônicos sediada em Amsterdã. Era originalmente uma subsidiária da Lost Boys e depois da Media Republic, sendo atualmente propriedade da Sony Interactive Entertainment. A companhia foi fundada em 2000 depois da fusão entre a Orange Games e a Digital Infinity.');
-        INSERT INTO desenvolvedor VALUES (default, 'BioWare', 'A BioWare é uma desenvolvedora canadense de jogos eletrônicos sediada em Edmonton, Alberta. Foi fundada em fevereiro de 1995 por Ray Muzyka, Greg Zeschuk, Trent Oster, Brent Oster, Marcel Zeschuk e Augustine Yip, sendo desde 2007 uma subsidiária da Electronic Arts.');
-        INSERT INTO desenvolvedor VALUES (default, 'Riot Games', 'A Riot Games, Inc. é uma desenvolvedora, editora e organizadora de torneios de esportes eletrônicos americana com sede em West Los Angeles, Califórnia.');
-        INSERT INTO desenvolvedor VALUES (default, 'Naughty Dog', 'A Naughty Dog, LLC é uma desenvolvedora norte-americana de jogos eletrônicos sediada em Santa Mônica, Califórnia. Foi fundada em setembro de 1984 pelos então estudantes colegiais Andy Gavin e Jason Rubin como JAM Software, sendo renomeada para seu nome atual alguns anos depois em 1989.');
-        INSERT INTO desenvolvedor VALUES (default, 'Tencent Games', 'A Tencent investiu em uma série de editoras e desenvolvedores de jogos não chineses, variando de ações minoritárias ao controle total da empresa. Por meio desses investimentos, em março de 2018 a Tencent foi considerada a maior empresa de videogame do mundo. Entre seus investimentos conhecidos incluem: Epic Games, Garena, Riot, Baidu, BlueStacks, Alibaba Group, SuperCell etc.');
-        INSERT INTO desenvolvedor VALUES (default, 'Supercell', 'Supercell é uma desenvolvedora finlandesa de jogos eletrônicos para dispositivos móveis fundada em maio de 2010 por Ilkka Paananen.');
-        INSERT INTO desenvolvedor VALUES (default, 'Epic Games', 'A Epic Games, Inc., anteriormente chamada de Potomac Computer Systems e Epic MegaGames, é uma desenvolvedora norte-americana de jogos eletrônicos e softwares sediada em Cary, Carolina do Norte. Foi fundada em 1991 por Tim Sweeney e originalmente ficava localizada na cidade de Potomac em Maryland.');
-        INSERT INTO desenvolvedor VALUES (default, 'Capcom', 'Capcom Co., Ltd. é uma desenvolvedora e publicadora japonesa de jogos eletrônicos sediada em Osaka. Ela é conhecida por ter criado franquias multimilionárias, tais como Resident Evil, Street Fighter, Mega Man, Devil May Cry, Dino Crisis e Onimusha. Sua sede principal está situada em Chuo-ku, Osaka.');
+        INSERT INTO desenvolvedor VALUES (1, 'NCSOFT', 'A NCSoft Corporation é uma desenvolvedora e publicadora sul-coreana de jogos eletrônicos sediada em Seongnam, Região Metropolitana de Seul. Foi fundada em março de 1997 por Taek Jin Kim e é a empresa responsável por títulos como Lineage, Guild Wars e Blade & Soul.');
+        INSERT INTO desenvolvedor VALUES (2, 'Obsidian Entertainment', 'Obsidian Entertainment é uma desenvolvedora de jogos eletrônicos americana fundada em 2003 após a desativação da Black Isle Studios, desenvolvedora da Interplay Entertainment.');
+        INSERT INTO desenvolvedor VALUES (3, 'Amazon Games', 'Amazon Game Studios é um estúdio de desenvolvedor de jogos eletrônicos, pertencente à Amazon.com.');
+        INSERT INTO desenvolvedor VALUES (4, 'Devolver', 'A Devolver Digital Inc. é uma publicadora de jogos eletrônicos estadunidense sediada em Austin, Texas, se especializando na publicação de jogos independentes.');
+        INSERT INTO desenvolvedor VALUES (5, 'EA', 'Eletronic Arts Inc. é uma empresa de jogos eletrônicos sediada em Redwood City, Califórnia. Fundada em maio de 1982 por Trip Hawkins.');
+        INSERT INTO desenvolvedor VALUES (6, 'Blizzard', 'Blizzard Entertainment é uma editora e desenvolvedora de videojogos americana tendo sua sede na cidade de Irvine, California. A companhia é uma subsidiária da Activision Blizzard e foi fundada em 8 de fevereiro de 1991.');
+        INSERT INTO desenvolvedor VALUES (7, 'Nintendo', 'A Nintendo Co., Ltd. é uma desenvolvedora e publicadora japonesa de jogos eletrônicos e consoles sediada em Quioto.');
+        INSERT INTO desenvolvedor VALUES (8, 'Ubisoft', 'Ubisoft Entertainment é uma empresa francesa de jogos eletrônicos com sede no subúrbio de Montreuil, em Paris, com vários estúdios de desenvolvimento em todo o mundo.');
+        INSERT INTO desenvolvedor VALUES (9, 'Rockstar Games', 'Rockstar Games, Inc. é uma produtora e publicadora de jogos eletrônicos fundada em 1994. Conhecida por ter criado grandes nomes dos jogos eletrônicos, a Rockstar é criadora das famosas séries Grand Theft Auto, Red Dead, Midnight Club, Bully, Max Payne e Manhunt.');
+        INSERT INTO desenvolvedor VALUES (10, 'Square Enix', 'A Square Enix Holdings Co., Ltd. é uma desenvolvedora e publicadora japonesa de jogos eletrônicos sediada em Tóquio. Ela é mais conhecida por suas franquias de RPGs eletrônicos, que incluem Final Fantasy, Dragon Quest e Kingdom Hearts.');
+        INSERT INTO desenvolvedor VALUES (11, 'Kojima Productions', 'A Kojima Productions Co., Ltd. é um estúdio japonês de desenvolvimento de videojogos, fundado por Hideo Kojima, criador da popular série Metal Gear.');
+        INSERT INTO desenvolvedor VALUES (12, 'CD Projekt Red', 'A CD Projekt S.A. é uma desenvolvedora e publicadora de jogos eletrônicos polonesa sediada em Varsóvia, Mazóvia. A companhia foi fundada em maio de 1994 por Marcin Iwiński e Michał Kiciński.');
+        INSERT INTO desenvolvedor VALUES (13, 'Valve Corporation', 'Valve Corporation é uma empresa norte-americana desenvolvedora de jogos eletrônicos e de distribuição digital, com sede em Bellevue, Washington, Estados Unidos.');
+        INSERT INTO desenvolvedor VALUES (14, 'Guerrilla Games', 'A Guerrilla B.V. é uma desenvolvedora holandesa de jogos eletrônicos sediada em Amsterdã. Era originalmente uma subsidiária da Lost Boys e depois da Media Republic, sendo atualmente propriedade da Sony Interactive Entertainment. A companhia foi fundada em 2000 depois da fusão entre a Orange Games e a Digital Infinity.');
+        INSERT INTO desenvolvedor VALUES (15, 'BioWare', 'A BioWare é uma desenvolvedora canadense de jogos eletrônicos sediada em Edmonton, Alberta. Foi fundada em fevereiro de 1995 por Ray Muzyka, Greg Zeschuk, Trent Oster, Brent Oster, Marcel Zeschuk e Augustine Yip, sendo desde 2007 uma subsidiária da Electronic Arts.');
+        INSERT INTO desenvolvedor VALUES (16, 'Riot Games', 'A Riot Games, Inc. é uma desenvolvedora, editora e organizadora de torneios de esportes eletrônicos americana com sede em West Los Angeles, Califórnia.');
+        INSERT INTO desenvolvedor VALUES (17, 'Naughty Dog', 'A Naughty Dog, LLC é uma desenvolvedora norte-americana de jogos eletrônicos sediada em Santa Mônica, Califórnia. Foi fundada em setembro de 1984 pelos então estudantes colegiais Andy Gavin e Jason Rubin como JAM Software, sendo renomeada para seu nome atual alguns anos depois em 1989.');
+        INSERT INTO desenvolvedor VALUES (18, 'Tencent Games', 'A Tencent investiu em uma série de editoras e desenvolvedores de jogos não chineses, variando de ações minoritárias ao controle total da empresa. Por meio desses investimentos, em março de 2018 a Tencent foi considerada a maior empresa de videogame do mundo. Entre seus investimentos conhecidos incluem: Epic Games, Garena, Riot, Baidu, BlueStacks, Alibaba Group, SuperCell etc.');
+        INSERT INTO desenvolvedor VALUES (19, 'Supercell', 'Supercell é uma desenvolvedora finlandesa de jogos eletrônicos para dispositivos móveis fundada em maio de 2010 por Ilkka Paananen.');
+        INSERT INTO desenvolvedor VALUES (20, 'Epic Games', 'A Epic Games, Inc., anteriormente chamada de Potomac Computer Systems e Epic MegaGames, é uma desenvolvedora norte-americana de jogos eletrônicos e softwares sediada em Cary, Carolina do Norte. Foi fundada em 1991 por Tim Sweeney e originalmente ficava localizada na cidade de Potomac em Maryland.');
+        INSERT INTO desenvolvedor VALUES (21, 'Capcom', 'Capcom Co., Ltd. é uma desenvolvedora e publicadora japonesa de jogos eletrônicos sediada em Osaka. Ela é conhecida por ter criado franquias multimilionárias, tais como Resident Evil, Street Fighter, Mega Man, Devil May Cry, Dino Crisis e Onimusha. Sua sede principal está situada em Chuo-ku, Osaka.');
     """),
     "jogo" : ("""
         INSERT INTO jogo VALUES (1001, 1, 'THRONE AND LIBERTY', 'Bem-vindos ao THRONE AND LIBERTY, um MMORPG multiplataforma gratuito. Em um ambiente em contínua mudança e PvPvE em escala massiva, você tem a habilidade de se transformar em criaturas que lutam por terra, mar e ar.', 0, '2023-12-07');
@@ -92,7 +95,7 @@ insercao = {
         INSERT INTO jogo VALUES (1009, 9, 'Grand Theft Auto V', 'Grand Theft Auto V para PC oferece aos jogadores a opção de explorar o gigantesco e premiado mundo de Los Santos e Blaine County em resoluções de até 4K e além, assim como a chance de experimentar o jogo rodando a 60 FPS (quadros por segundo).', 90.99, '2013-09-17');
         INSERT INTO jogo VALUES (1010, 10, 'FINAL FANTASY VII REMAKE INTERGRADE', 'Cloud Strife, ex-agente da SOLDIER, chega a Midgar, a cidade movida a energia de mako. O clássico atemporal FINAL FANTASY VII renasceu, com gráficos de última geração, um novo sistema de combate e uma aventura adicional com Yuffie Kisaragi.', 349.90, '2022-06-17');
         INSERT INTO jogo VALUES (1011, 11, 'DEATH STRANDING DIRECTORS CUT', 'Do lendário criador de jogos Hideo Kojima, surge uma experiência totalmente inédita que desafia o gênero. Sam Bridges precisa enfrentar um mundo profundamente transformado pelo Death Stranding. Carregando os restos desconectados do nosso futuro em suas mãos, ele embarca em uma jornada para reconectar o mundo destruído.', 159.00, '2022-03-30');
-        INSERT INTO jogo VALUE, 12, 'The Witcher® 3: Wild Hunt', 'The Witcher 3: Wild Hunt é um jogo eletrônico de RPG de ação em mundo aberto desenvolvido pela CD Projekt RED e lançado no dia 19 de maio de 2015 para as plataformas Microsoft Windows, PlayStation 4, Xbox One e em outubro de 2019 para o Nintendo Switch, sendo o terceiro título da série de jogos The Witcher. ', 129.99, '2015-05-18');
+        INSERT INTO jogo VALUES (1012, 12, 'The Witcher® 3: Wild Hunt', 'The Witcher 3: Wild Hunt é um jogo eletrônico de RPG de ação em mundo aberto desenvolvido pela CD Projekt RED e lançado no dia 19 de maio de 2015 para as plataformas Microsoft Windows, PlayStation 4, Xbox One e em outubro de 2019 para o Nintendo Switch, sendo o terceiro título da série de jogos The Witcher.', 129.99, '2015-05-18');
         INSERT INTO jogo VALUES (1013, 13, 'Half-Life 2', 'Half-Life 2 (estilizado como HλLF-LIFE2) é um jogo de tiro em primeira pessoa, lançado em 2004 pela Valve Corporation. Trazendo diversas inovações para o campo dos games, Half-Life 2 logo se tornou um enorme sucesso de vendas e de crítica, ganhando vários prêmios importantes e sendo inclusive amplamente aclamado como o "Jogo do Ano" e, posteriormente, como o "Jogo da Década".', 32.99, '2004-11-16');
         INSERT INTO jogo VALUES (1014, 14, 'Horizon Forbidden West', 'Horizon Forbidden West é um jogo eletrônico de RPG de ação desenvolvido pela Guerrilla Games e publicado pela Sony Interactive Entertainment.', 299.90, '2022-02-18');
         INSERT INTO jogo VALUES (1015, 15, 'Anthem', 'Anthem é um jogo eletrônico de RPG de ação multijogador desenvolvido pela BioWare e publicado pela Electronic Arts.', 44, '2022-02-19');
@@ -104,14 +107,14 @@ insercao = {
         INSERT INTO jogo VALUES (1021, 21, 'Resident Evil 3', 'Resident Evil 3, chamado no Japão de Biohazard RE:3, é um jogo eletrônico de survival horror desenvolvido e publicado pela Capcom.', 139.90, '2020-04-03');
     """),
     "promocao" : ("""
-        INSERT INTO promocao VALUES (default, 'Summer Sale', 'Chegou o Verão!!! Confira os mais diversos jogos nessa super promoção.');
-        INSERT INTO promocao VALUES (default, 'Halloween', 'Doces ou Desconturas? Aposto que você vai querer conferir os nossos preços baixíssimos nos seus jogos preferidos.');
-        INSERT INTO promocao VALUES (default, 'Férias de Inverno', 'FSHHHH!! É o vento do inverno levando a temperatura e os preços lá em baixo');
-        INSERT INTO promocao VALUES (default, 'Natal', 'HO HO HO! Papai Noel chegou e trouxe MUUITAS promoções pra você que foi um bom garoto durante o  ano, ou nem tanto...');
-        INSERT INTO promocao VALUES (default, 'Ano Novo Chinês', '888, A sorte é sua, os preços dos jogos desenvolvidos pelas empresas de origem chinesa estão em promoção!!!');
-        INSERT INTO promocao VALUES (default, 'Promoção de Fim de Semana', 'Relaxe no Fim de Semana com aquele jogo que você estava de olho!');
-        INSERT INTO promocao VALUES (default, 'Páscoa', 'A época é de chocolate e de GAMES. Aproveite a Páscoa para curtir os melhores jogos pelo melhor preço!');
-        INSERT INTO promocao VALUES (default, 'Aniversário da Plataforma', 'Comemore o aniversário da plataforma, e quem recebe os presentes é você, que nos faz melhores a cada ano!');
+        INSERT INTO promocao VALUES (1, 'Summer Sale', 'Chegou o Verão!!! Confira os mais diversos jogos nessa super promoção.');
+        INSERT INTO promocao VALUES (2, 'Halloween', 'Doces ou Desconturas? Aposto que você vai querer conferir os nossos preços baixíssimos nos seus jogos preferidos.');
+        INSERT INTO promocao VALUES (3, 'Férias de Inverno', 'FSHHHH!! É o vento do inverno levando a temperatura e os preços lá em baixo');
+        INSERT INTO promocao VALUES (4, 'Natal', 'HO HO HO! Papai Noel chegou e trouxe MUUITAS promoções pra você que foi um bom garoto durante o  ano, ou nem tanto...');
+        INSERT INTO promocao VALUES (5, 'Ano Novo Chinês', '888, A sorte é sua, os preços dos jogos desenvolvidos pelas empresas de origem chinesa estão em promoção!!!');
+        INSERT INTO promocao VALUES (6, 'Promoção de Fim de Semana', 'Relaxe no Fim de Semana com aquele jogo que você estava de olho!');
+        INSERT INTO promocao VALUES (7, 'Páscoa', 'A época é de chocolate e de GAMES. Aproveite a Páscoa para curtir os melhores jogos pelo melhor preço!');
+        INSERT INTO promocao VALUES (8, 'Aniversário da Plataforma', 'Comemore o aniversário da plataforma, e quem recebe os presentes é você, que nos faz melhores a cada ano!');
     """),
     "expansao" : ("""
         INSERT INTO expansao VALUES (5001, 1009, 'Grand Theft Auto V - Criminal Enterprise Starter Pack', 'Requer Grand Theft Auto V no Steamzera para ser acessado.', 18.9);
@@ -132,46 +135,46 @@ insercao = {
         INSERT INTO expansao VALUES (5016, 1007, 'Mario Kart™ 8 Deluxe – Passe de pistas adicionais', 'Corra em mais pistas e obtenha mais opções de personagens com o conteúdo extra da licença Mario Kart™ 8 Deluxe – Passe de pistas adicionais', 128);
     """),
     "item" : ("""
-        INSERT INTO item VALUES (default, 50009, 1002, 'Skin/Roupa', NULL, 'Roupa Florida de Primavera');
-        INSERT INTO item VALUES (default, 50003, 1002, 'Skin/Arma', NULL, 'Bastão do Esqueleto Imperador');
-        INSERT INTO item VALUES (default, 50001, 1002, 'Skin/Roupa', NULL, 'Roupa de Praia');
-        INSERT INTO item VALUES (default, 50002, 1002, 'Skin/Conjunto', NULL, 'Conjunto Tabuleiro e Cartas Natalinas');
-        INSERT INTO item VALUES (default, 50002, 1004, 'Skin/Conjunto', NULL, 'Conjunto Tabuleiro e Cartas Halloween');
-        INSERT INTO item VALUES (default, 50002, 1002, 'Skin/Conjunto', NULL, 'Conjunto Tabuleiro e Cartas Carnaval');
-        INSERT INTO item VALUES (default, 50001, 1006, 'Skin/Conjunto', NULL, 'Cassidy Van Helsin');
-        INSERT INTO item VALUES (default, 50001, 1006, 'Skin/Conjunto', NULL, 'Cassidy Chapéu Branco');
-        INSERT INTO item VALUES (default, 50008, 1006, 'Skin/Conjunto', NULL, 'Brigitte SÓL');
-        INSERT INTO item VALUES (default, 50010, 1006, 'Skin/Conjunto', NULL, 'Brigitte Caçadora de Vampiros');
-        INSERT INTO item VALUES (default, 50010, 1006, 'Skin/Conjunto', NULL, 'Illari Corvo Noturno');
-        INSERT INTO item VALUES (default, 50010, 1006, 'Skin/Conjunto', NULL, 'Ramattra Monge Peregrino');
-        INSERT INTO item VALUES (default, 50001, 1006, 'Skin/Conjunto', NULL, 'Ashe Chapeuzinho Vermelho');
-        INSERT INTO item VALUES (default, 50004, 1006, 'Skin/Conjunto', NULL, 'Ashe Encantadora de Serpentes');
-        INSERT INTO item VALUES (default, 50004, 1006, 'Skin/Conjunto', NULL, 'Roadhog Tóxico');
-        INSERT INTO item VALUES (default, 50006, 1006, 'Skin/Conjunto', NULL, 'Ana Polar');
-        INSERT INTO item VALUES (default, 50007, 1006, 'Skin/Conjunto', NULL, 'Ana Guardiã Espiritual');
-        INSERT INTO item VALUES (default, 50001, 1006, 'Skin/Conjunto', NULL, 'Winston Lobisgorila');
-        INSERT INTO item VALUES (default, 50008, 1016, 'Skin/Conjunto', 'Adquirido em 04/11/2023', 'THRESH IMPERADOR LUNAR');
-        INSERT INTO item VALUES (default, 50008, 1016, 'Skin/Conjunto', 'Adquirido em 02/04/2023', 'TRYNDAMERE ESPADA DEMONÍACA');
-        INSERT INTO item VALUES (default, 50008, 1016, 'Skin/Conjunto', 'Adquirido em 09/02/2023', 'NIDALEE CAÇADORA CÓSMICA');
-        INSERT INTO item VALUES (default, 50005, 1016, 'Skin/Conjunto', 'Adquirido em 31/05/2022', 'NAMI DESTINO CÓSMICO');
-        INSERT INTO item VALUES (default, 50002, 1016, 'Skin/Conjunto', 'Adquirido em 30/12/2021', 'PYKE SENTINELA');
-        INSERT INTO item VALUES (default, 50005, 1016, 'Skin/Conjunto', 'Adquirido em 30/11/2021', 'POPPY HEXTEC');
-        INSERT INTO item VALUES (default, 50002, 1016, 'Skin/Conjunto', 'Adquirido em 09/12/2021', 'PANTHEON ASCENDENTE DE PRESTÍGIO');
-        INSERT INTO item VALUES (default, 50005, 1016, 'Skin/Conjunto', 'Adquirido em 23/09/2021', 'LEE SIN DRAGÃO DA TORMENTA');
-        INSERT INTO item VALUES (default, 50005, 1016, 'Skin/Conjunto', 'Adquirido em 04/02/2021', 'SKARNER MÁQUINA DE COMBATE ALFA');
-        INSERT INTO item VALUES (default, 50010, 1016, 'Skin/Conjunto', 'Adquirido em 12/12/2020', 'TRISTANA TREINADORA DE DRAGÕES');
-        INSERT INTO item VALUES (default, 50010, 1016, 'Skin/Conjunto', 'Adquirido em 21/08/2020', 'MORGANA CONGREGAÇÃO DAS BRUXAS');
-        INSERT INTO item VALUES (default, 50001, 1016, 'Skin/Conjunto', 'Adquirido em 22/01/2017', 'POPPY BONECA DE PANO');
-        INSERT INTO item VALUES (default, 50007, 1016, 'Skin/Conjunto', 'Adquirido em 26/10/2019', 'XAYAH GUARDIÃ ESTELAR');
-        INSERT INTO item VALUES (default, 50003, 1018, 'Skin/Arma', NULL, 'Gold Plate - S12K');
-        INSERT INTO item VALUES (default, 50003, 1018, 'Skin/Arma', NULL, 'Tick Tock - M416');
-        INSERT INTO item VALUES (default, 50003, 1018, 'Skin/Arma', NULL, 'Gold Plate - Groza');
-        INSERT INTO item VALUES (default, 50003, 1018, 'Skin/Arma', NULL, 'Silver Plave - UMP45');
-        INSERT INTO item VALUES (default, 50009, 1020, 'Skin/Item', NULL, 'Mochila Rosa da Slone');
-        INSERT INTO item VALUES (default, 50009, 1020, 'Skin/Item', NULL, 'Paraquedas do Homem Morcego');
-        INSERT INTO item VALUES (default, 50009, 1020, 'Skin/Roupa', 'Skin do Homem de Ferro', 'Homem de Ferro');
-        INSERT INTO item VALUES (default, 50009, 1020, 'Skin/Roupa', 'Skin do Peixotoon', 'Peixotoon');
-        INSERT INTO item VALUES (default, 50009, 1020, 'Skin/Arma', NULL, 'Cor Ciano Brilhante');
+        INSERT INTO item VALUES (3001, 50009, 1002, 'Skin/Roupa', NULL, 'Roupa Florida de Primavera');
+        INSERT INTO item VALUES (3002, 50003, 1002, 'Skin/Arma', NULL, 'Bastão do Esqueleto Imperador');
+        INSERT INTO item VALUES (3003, 50001, 1002, 'Skin/Roupa', NULL, 'Roupa de Praia');
+        INSERT INTO item VALUES (3004, 50002, 1002, 'Skin/Conjunto', NULL, 'Conjunto Tabuleiro e Cartas Natalinas');
+        INSERT INTO item VALUES (3005, 50002, 1004, 'Skin/Conjunto', NULL, 'Conjunto Tabuleiro e Cartas Halloween');
+        INSERT INTO item VALUES (3006, 50002, 1002, 'Skin/Conjunto', NULL, 'Conjunto Tabuleiro e Cartas Carnaval');
+        INSERT INTO item VALUES (3007, 50001, 1006, 'Skin/Conjunto', NULL, 'Cassidy Van Helsin');
+        INSERT INTO item VALUES (3008, 50001, 1006, 'Skin/Conjunto', NULL, 'Cassidy Chapéu Branco');
+        INSERT INTO item VALUES (3009, 50008, 1006, 'Skin/Conjunto', NULL, 'Brigitte SÓL');
+        INSERT INTO item VALUES (3010, 50010, 1006, 'Skin/Conjunto', NULL, 'Brigitte Caçadora de Vampiros');
+        INSERT INTO item VALUES (3011, 50010, 1006, 'Skin/Conjunto', NULL, 'Illari Corvo Noturno');
+        INSERT INTO item VALUES (3012, 50010, 1006, 'Skin/Conjunto', NULL, 'Ramattra Monge Peregrino');
+        INSERT INTO item VALUES (3013, 50001, 1006, 'Skin/Conjunto', NULL, 'Ashe Chapeuzinho Vermelho');
+        INSERT INTO item VALUES (3014, 50004, 1006, 'Skin/Conjunto', NULL, 'Ashe Encantadora de Serpentes');
+        INSERT INTO item VALUES (3015, 50004, 1006, 'Skin/Conjunto', NULL, 'Roadhog Tóxico');
+        INSERT INTO item VALUES (3016, 50006, 1006, 'Skin/Conjunto', NULL, 'Ana Polar');
+        INSERT INTO item VALUES (3017, 50007, 1006, 'Skin/Conjunto', NULL, 'Ana Guardiã Espiritual');
+        INSERT INTO item VALUES (3018, 50001, 1006, 'Skin/Conjunto', NULL, 'Winston Lobisgorila');
+        INSERT INTO item VALUES (3019, 50008, 1016, 'Skin/Conjunto', 'Adquirido em 04/11/2023', 'THRESH IMPERADOR LUNAR');
+        INSERT INTO item VALUES (3020, 50008, 1016, 'Skin/Conjunto', 'Adquirido em 02/04/2023', 'TRYNDAMERE ESPADA DEMONÍACA');
+        INSERT INTO item VALUES (3021, 50008, 1016, 'Skin/Conjunto', 'Adquirido em 09/02/2023', 'NIDALEE CAÇADORA CÓSMICA');
+        INSERT INTO item VALUES (3022, 50005, 1016, 'Skin/Conjunto', 'Adquirido em 31/05/2022', 'NAMI DESTINO CÓSMICO');
+        INSERT INTO item VALUES (3023, 50002, 1016, 'Skin/Conjunto', 'Adquirido em 30/12/2021', 'PYKE SENTINELA');
+        INSERT INTO item VALUES (3024, 50005, 1016, 'Skin/Conjunto', 'Adquirido em 30/11/2021', 'POPPY HEXTEC');
+        INSERT INTO item VALUES (3025, 50002, 1016, 'Skin/Conjunto', 'Adquirido em 09/12/2021', 'PANTHEON ASCENDENTE DE PRESTÍGIO');
+        INSERT INTO item VALUES (3026, 50005, 1016, 'Skin/Conjunto', 'Adquirido em 23/09/2021', 'LEE SIN DRAGÃO DA TORMENTA');
+        INSERT INTO item VALUES (3027, 50005, 1016, 'Skin/Conjunto', 'Adquirido em 04/02/2021', 'SKARNER MÁQUINA DE COMBATE ALFA');
+        INSERT INTO item VALUES (3028, 50010, 1016, 'Skin/Conjunto', 'Adquirido em 12/12/2020', 'TRISTANA TREINADORA DE DRAGÕES');
+        INSERT INTO item VALUES (3029, 50010, 1016, 'Skin/Conjunto', 'Adquirido em 21/08/2020', 'MORGANA CONGREGAÇÃO DAS BRUXAS');
+        INSERT INTO item VALUES (3030, 50001, 1016, 'Skin/Conjunto', 'Adquirido em 22/01/2017', 'POPPY BONECA DE PANO');
+        INSERT INTO item VALUES (3031, 50007, 1016, 'Skin/Conjunto', 'Adquirido em 26/10/2019', 'XAYAH GUARDIÃ ESTELAR');
+        INSERT INTO item VALUES (3032, 50003, 1018, 'Skin/Arma', NULL, 'Gold Plate - S12K');
+        INSERT INTO item VALUES (3033, 50003, 1018, 'Skin/Arma', NULL, 'Tick Tock - M416');
+        INSERT INTO item VALUES (3034, 50003, 1018, 'Skin/Arma', NULL, 'Gold Plate - Groza');
+        INSERT INTO item VALUES (3035, 50003, 1018, 'Skin/Arma', NULL, 'Silver Plave - UMP45');
+        INSERT INTO item VALUES (3036, 50009, 1020, 'Skin/Item', NULL, 'Mochila Rosa da Slone');
+        INSERT INTO item VALUES (3037, 50009, 1020, 'Skin/Item', NULL, 'Paraquedas do Homem Morcego');
+        INSERT INTO item VALUES (3038, 50009, 1020, 'Skin/Roupa', 'Skin do Homem de Ferro', 'Homem de Ferro');
+        INSERT INTO item VALUES (3039, 50009, 1020, 'Skin/Roupa', 'Skin do Peixotoon', 'Peixotoon');
+        INSERT INTO item VALUES (3040, 50009, 1020, 'Skin/Arma', NULL, 'Cor Ciano Brilhante');
     """),
     "conquista" : ("""
         INSERT INTO conquista VALUES (default, 50009, 1002, 'Analista', 'Analise 15 recursos', 'TRUE');
@@ -232,7 +235,10 @@ insercao = {
         INSERT INTO avaliacao VALUES (default, 1021, 50010, 'Terminei RE2 e fui sedento pro RE3 achando que ia ser tão bom quanto, porém me deparei com essa decepção.', 2);
     """),
     "midia" : ("""
-        INSERT INTO midia VALUES(default, 1017, 'Imagem');
+        INSERT INTO midia VALUES(default, 1017, 'Imagem', 'path1');
+        INSERT INTO midia VALUES(default, 1012, 'Gif', 'path2');
+        INSERT INTO midia VALUES(default, 1009, 'Imagem', 'path3');
+        INSERT INTO midia VALUES(default, 1011, 'Video', 'path4');
     """),
     "compra" : ("""
         INSERT INTO compra VALUES (100001, 50001, 182.77, 'Comprov_1'); 
@@ -281,4 +287,127 @@ insercao = {
         INSERT INTO compra_jogo VALUES (100016, 1009, '2021-03-15 20:24:36');
         INSERT INTO compra_jogo VALUES (100017, 1001, '2023-11-14 16:01:50');
     """),
+    "item_raridade" : ("""
+        INSERT INTO item_raridade VALUES (default, 3001, 2);
+        INSERT INTO item_raridade VALUES (default, 3002, 4);
+        INSERT INTO item_raridade VALUES (default, 3003, 3);
+        INSERT INTO item_raridade VALUES (default, 3004, 3);
+        INSERT INTO item_raridade VALUES (default, 3005, 4);
+        INSERT INTO item_raridade VALUES (default, 3006, 2);
+        INSERT INTO item_raridade VALUES (default, 3007, 6);
+        INSERT INTO item_raridade VALUES (default, 3008, 5);
+        INSERT INTO item_raridade VALUES (default, 3009, 3);
+        INSERT INTO item_raridade VALUES (default, 3010, 5);
+        INSERT INTO item_raridade VALUES (default, 3011, 2);
+        INSERT INTO item_raridade VALUES (default, 3012, 1);
+        INSERT INTO item_raridade VALUES (default, 3013, 4);
+        INSERT INTO item_raridade VALUES (default, 3014, 6);
+        INSERT INTO item_raridade VALUES (default, 3015, 7);
+        INSERT INTO item_raridade VALUES (default, 3016, 1);
+        INSERT INTO item_raridade VALUES (default, 3017, 1);
+        INSERT INTO item_raridade VALUES (default, 3018, 3);
+        INSERT INTO item_raridade VALUES (default, 3019, 2);
+        INSERT INTO item_raridade VALUES (default, 3020, 6);
+        INSERT INTO item_raridade VALUES (default, 3021, 6);
+        INSERT INTO item_raridade VALUES (default, 3022, 5);
+        INSERT INTO item_raridade VALUES (default, 3023, 2);
+        INSERT INTO item_raridade VALUES (default, 3024, 2);
+        INSERT INTO item_raridade VALUES (default, 3025, 3);
+        INSERT INTO item_raridade VALUES (default, 3026, 2);
+        INSERT INTO item_raridade VALUES (default, 3027, 3);
+        INSERT INTO item_raridade VALUES (default, 3028, 3);
+        INSERT INTO item_raridade VALUES (default, 3029, 4);
+        INSERT INTO item_raridade VALUES (default, 3030, 2);
+        INSERT INTO item_raridade VALUES (default, 3031, 7);
+        INSERT INTO item_raridade VALUES (default, 3032, 4);
+        INSERT INTO item_raridade VALUES (default, 3033, 2);
+        INSERT INTO item_raridade VALUES (default, 3034, 3);
+        INSERT INTO item_raridade VALUES (default, 3035, 2);
+        INSERT INTO item_raridade VALUES (default, 3036, 2);
+        INSERT INTO item_raridade VALUES (default, 3037, 7);
+        INSERT INTO item_raridade VALUES (default, 3038, 6);
+        INSERT INTO item_raridade VALUES (default, 3039, 4);
+        INSERT INTO item_raridade VALUES (default, 3040, 3);     
+    """),
+    "jogo_genero" : ("""
+        INSERT INTO jogo_genero VALUES (1001, 100);
+        INSERT INTO jogo_genero VALUES (1001, 101);
+        INSERT INTO jogo_genero VALUES (1001, 106);
+        INSERT INTO jogo_genero VALUES (1002, 100);
+        INSERT INTO jogo_genero VALUES (1002, 101);
+        INSERT INTO jogo_genero VALUES (1003, 100);
+        INSERT INTO jogo_genero VALUES (1003, 101);
+        INSERT INTO jogo_genero VALUES (1003, 106);
+        INSERT INTO jogo_genero VALUES (1004, 300);
+        INSERT INTO jogo_genero VALUES (1004, 303);
+        INSERT INTO jogo_genero VALUES (1005, 500);
+        INSERT INTO jogo_genero VALUES (1005, 502);
+        INSERT INTO jogo_genero VALUES (1005, 505);
+        INSERT INTO jogo_genero VALUES (1006, 200);
+        INSERT INTO jogo_genero VALUES (1006, 202);
+        INSERT INTO jogo_genero VALUES (1006, 300);
+        INSERT INTO jogo_genero VALUES (1007, 500);
+        INSERT INTO jogo_genero VALUES (1007, 501);
+        INSERT INTO jogo_genero VALUES (1008, 100);
+        INSERT INTO jogo_genero VALUES (1009, 100);
+        INSERT INTO jogo_genero VALUES (1009, 401);
+        INSERT INTO jogo_genero VALUES (1009, 200);
+        INSERT INTO jogo_genero VALUES (1009, 201);
+        INSERT INTO jogo_genero VALUES (1009, 202);
+        INSERT INTO jogo_genero VALUES (1010, 100);
+        INSERT INTO jogo_genero VALUES (1010, 101);
+        INSERT INTO jogo_genero VALUES (1010, 102);
+        INSERT INTO jogo_genero VALUES (1010, 106);
+        INSERT INTO jogo_genero VALUES (1010, 303);
+        INSERT INTO jogo_genero VALUES (1010, 300);
+        INSERT INTO jogo_genero VALUES (1011, 101);
+        INSERT INTO jogo_genero VALUES (1011, 201);
+        INSERT INTO jogo_genero VALUES (1011, 601);
+        INSERT INTO jogo_genero VALUES (1011, 400);
+        INSERT INTO jogo_genero VALUES (1011, 401);
+        INSERT INTO jogo_genero VALUES (1012, 100);
+        INSERT INTO jogo_genero VALUES (1012, 101);
+        INSERT INTO jogo_genero VALUES (1012, 106);
+        INSERT INTO jogo_genero VALUES (1012, 601);
+        INSERT INTO jogo_genero VALUES (1013, 601);
+        INSERT INTO jogo_genero VALUES (1013, 400);
+        INSERT INTO jogo_genero VALUES (1014, 100);
+        INSERT INTO jogo_genero VALUES (1014, 101);
+        INSERT INTO jogo_genero VALUES (1014, 201);
+        INSERT INTO jogo_genero VALUES (1014, 401);
+        INSERT INTO jogo_genero VALUES (1014, 601);
+        INSERT INTO jogo_genero VALUES (1015, 100);
+        INSERT INTO jogo_genero VALUES (1015, 202);
+        INSERT INTO jogo_genero VALUES (1016, 307);
+        INSERT INTO jogo_genero VALUES (1016, 300);
+        INSERT INTO jogo_genero VALUES (1017, 100);
+        INSERT INTO jogo_genero VALUES (1018, 100);
+        INSERT INTO jogo_genero VALUES (1018, 200);
+        INSERT INTO jogo_genero VALUES (1018, 201);
+        INSERT INTO jogo_genero VALUES (1018, 204);
+        INSERT INTO jogo_genero VALUES (1019, 100);
+        INSERT INTO jogo_genero VALUES (1019, 300);
+        INSERT INTO jogo_genero VALUES (1019, 302);
+        INSERT INTO jogo_genero VALUES (1020, 100);
+        INSERT INTO jogo_genero VALUES (1020, 201);
+        INSERT INTO jogo_genero VALUES (1020, 204);
+        INSERT INTO jogo_genero VALUES (1021, 100);
+        INSERT INTO jogo_genero VALUES (1021, 201);
+        INSERT INTO jogo_genero VALUES (1021, 601);
+    """),
+    "jogo_promocao" : ("""
+        INSERT INTO jogo_promocao VALUES (1002, 1, '2024-06-01 00:00:00', '2024-06-30 00:00:00', 0.33);
+        INSERT INTO jogo_promocao VALUES (1002, 2, '2024-10-27 00:00:00', '2024-11-01 00:00:00', 0.15);
+        INSERT INTO jogo_promocao VALUES (1009, 4, '2024-12-20 00:00:00', '2024-12-27 00:00:00', 0.18);
+        INSERT INTO jogo_promocao VALUES (1009, 3, '2024-10-01 00:00:00', '2024-10-07 00:00:00', 0.85);
+        INSERT INTO jogo_promocao VALUES (1009, 1, '2024-06-01 00:00:00', '2024-06-15 00:00:00', 0.10);
+        INSERT INTO jogo_promocao VALUES (1010, 8, '2024-11-12 00:00:00', '2024-11-26 00:00:00', 0.55);
+        INSERT INTO jogo_promocao VALUES (1010, 1, '2024-06-01 00:00:00', '2024-06-07 00:00:00', 0.47);
+        INSERT INTO jogo_promocao VALUES (1013, 3, '2024-10-15 00:00:00', '2024-10-31 00:00:00', 0.15);
+        INSERT INTO jogo_promocao VALUES (1007, 7, '2024-03-30 00:00:00', '2024-04-07 00:00:00', 0.90);
+        INSERT INTO jogo_promocao VALUES (1017, 1, '2024-06-01 00:00:00', '2024-06-30 00:00:00', 0.80);
+        INSERT INTO jogo_promocao VALUES (1021, 6, '2024-05-03 00:00:00', '2024-05-05 00:00:00', 0.55);
+        INSERT INTO jogo_promocao VALUES (1015, 3, '2024-10-21 00:00:00', '2024-10-28 00:00:00', 0.67);
+        INSERT INTO jogo_promocao VALUES (1017, 2, '2024-10-27 00:00:00', '2024-11-01 00:00:00', 0.33);
+    """)
 }

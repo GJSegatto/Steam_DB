@@ -12,7 +12,7 @@ create = {
     """),
     "desenvolvedor" : ("""
         CREATE TABLE desenvolvedor (
-	    id_dev serial PRIMARY KEY,
+	    id_dev integer PRIMARY KEY,
 	    nome varchar(50) NOT NULL UNIQUE,
 	    descricao varchar(500)
     );
@@ -28,12 +28,13 @@ create = {
         CREATE TABLE compra (
 	    id_compra integer PRIMARY KEY,
 	    id_usuario integer REFERENCES usuario (id_usuario),
-	    valor numeric NOT NULL
+	    valor numeric NOT NULL,
+        comprovante varchar(50) UNIQUE
         );
     """),
     "raridade" : ("""
         CREATE TABLE raridade (
-        id_raridade serial PRIMARY KEY,
+        id_raridade integer PRIMARY KEY,
         nome varchar(50) NOT NULL
         );
     """),
@@ -44,7 +45,6 @@ create = {
 	    nome varchar(100) NOT NULL,
 	    descricao varchar(500),
 	    valor numeric NOT NULL,
-        comprovante varchar(50) UNIQUE,
 	    data_lancamento date NOT NULL
         );
     """),
@@ -58,7 +58,7 @@ create = {
     """),
     "item" : ("""
         CREATE TABLE item (
-        id_item serial PRIMARY KEY,
+        id_item integer PRIMARY KEY,
         id_usuario integer REFERENCES usuario(id_usuario),
         id_jogo integer REFERENCES jogo(id_jogo),
         tipo varchar(50) NOT NULL,
@@ -68,9 +68,9 @@ create = {
     """),
     "item_raridade" : ("""
         CREATE TABLE item_raridade (
-        id_item_raridade integer PRIMARY KEY,
-        id_item integer REFERENCES item (id_item),
-        id_raridade integer
+        id_item_raridade serial PRIMARY KEY,
+        id_item integer REFERENCES item (id_item) NOT NULL,
+        id_raridade integer NOT NULL
         );
     """),
     "genero" : ("""
@@ -81,8 +81,8 @@ create = {
     """),
     "jogo_genero" : ("""
         CREATE TABLE jogo_genero (
-	    id_genero integer REFERENCES genero (id_genero),
 	    id_jogo integer REFERENCES jogo (id_jogo),
+        id_genero integer REFERENCES genero (id_genero),
 	    PRIMARY KEY(id_genero,id_jogo)
         );
     """),
@@ -109,7 +109,7 @@ create = {
     """),
     "promocao" : ("""
         CREATE TABLE promocao (
-	    id_promocao serial PRIMARY KEY,
+	    id_promocao integer PRIMARY KEY,
 	    nome varchar(50) NOT NULL UNIQUE,
 	    descricao varchar(500)
         );
@@ -119,8 +119,8 @@ create = {
         id_jogo integer REFERENCES jogo (id_jogo),
         id_promocao integer REFERENCES promocao (id_promocao),
         data_inicio timestamp NOT NULL,
-        desconto numeric NOT NULL,
         data_final timestamp NOT NULL,
+        desconto numeric NOT NULL,
         PRIMARY KEY(id_jogo,id_promocao)
         );
     """),
@@ -128,7 +128,8 @@ create = {
         CREATE TABLE midia (
         id_midia serial PRIMARY KEY,
         id_jogo integer REFERENCES jogo (id_jogo),
-        tipo varchar(25) NOT NULL
+        tipo varchar(25) NOT NULL,
+        link varchar(50)
         );
     """),
     "expansao" : ("""
@@ -148,7 +149,6 @@ create = {
         PRIMARY KEY(id_compra,id_expansao)
         );
     """),
-    
 }
 
 

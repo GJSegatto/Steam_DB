@@ -18,7 +18,7 @@ def menu():
     [1] - Criar Todas as Tabelas.
     [2] - Dropar Todas as Tabelas.
     [3] - Popular Todas as Tabelas.
-    [4] - 
+    [4] - Consulta 1: Distribuição de Gêneros.
     [5] - 
     [6] - 
     [0] - Sair.
@@ -60,8 +60,16 @@ def insert_valores():
         print("Não foi possível concluir a iclusão de valores no banco de dados por conta do seguinte erro:\n", err.args)
         cnx.rollback()
         
-def op4():
-    print("4")
+def consulta_total_genero():
+    print("Primeira consulta: Exibir a quantidade de gêneros dos jogos que foram adquiridos pelos usuários da plataforma com o intuito de descobrir os gêneros mais apreciados pelos jogadores. \n")
+    query = consultas.total_genero
+
+    cursor.execute(query)
+    recset = cursor.fetchall()
+
+    for rec in recset:
+        print("Gênero: {} - {} unidades.".format(rec[0], rec[1]))
+
 
 def op5():
     print("5")

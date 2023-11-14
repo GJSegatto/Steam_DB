@@ -17,7 +17,7 @@ try:
         elif opcao == 3:
             fc.insert_valores()    
         elif opcao == 4:
-            fc.op4()    
+            fc.consulta_total_genero()    
         elif opcao == 5:
             fc.op5()    
         elif opcao == 6:
