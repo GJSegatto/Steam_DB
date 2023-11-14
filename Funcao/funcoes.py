@@ -25,8 +25,6 @@ def menu():
     """
 )
 
-
-    
 def criaTabelas():
     print("Iniciando criação das tabelas...")
     try:
@@ -36,7 +34,7 @@ def criaTabelas():
         cnx.commit()
         
     except psycopg2.Error as err:
-        print("Não foi possível fazer a inclusão das tabelas por conta do seguinte erro: \n", err.args)
+        print("Não foi possível fazer a criação das tabelas por conta do seguinte erro: \n", err.args)
         cnx.rollback()
 
 def drop_tabelas():
@@ -53,7 +51,6 @@ def drop_tabelas():
 
 def insert_valores():
     print("Inserindo Valores nas Tabelas")
-    
     try:
         for nome_tabela in insercoes.insercao:
             query = insercoes.insercao[nome_tabela]
@@ -63,7 +60,6 @@ def insert_valores():
         print("Não foi possível concluir a iclusão de valores no banco de dados por conta do seguinte erro:\n", err.args)
         cnx.rollback()
         
-
 def op4():
     print("4")
 

@@ -1,7 +1,7 @@
 create = {
     "usuario" : ("""
         CREATE TABLE usuario (
-	    id_usuario serial PRIMARY KEY,
+	    id_usuario integer PRIMARY KEY,
 	    nickname varchar(50) NOT NULL UNIQUE,
 	    email varchar(100),
 	    senha varchar(100),
@@ -39,7 +39,7 @@ create = {
     """),
     "jogo" : ("""
         CREATE TABLE jogo (
-	    id_jogo serial PRIMARY KEY,
+	    id_jogo integer PRIMARY KEY,
 	    id_dev integer REFERENCES desenvolvedor (id_dev),
 	    nome varchar(100) NOT NULL,
 	    descricao varchar(500),
@@ -88,11 +88,12 @@ create = {
     """),
     "avaliacao" : ("""
         CREATE TABLE avaliacao (
-	    id_avaliacao integer PRIMARY KEY,
+	    id_avaliacao serial,
 	    id_jogo integer REFERENCES jogo (id_jogo),
 	    id_usuario integer REFERENCES usuario (id_usuario),
 	    conteudo varchar(500),
-	    nota integer NOT NULL
+	    nota integer NOT NULL,
+        PRIMARY KEY(id_avaliacao, id_usuario, id_jogo)
         );
     """),
     "conquista" : ("""
@@ -100,16 +101,17 @@ create = {
 	    id_conquista serial,
 	    id_usuario integer REFERENCES usuario (id_usuario),
 	    id_jogo integer REFERENCES jogo (id_jogo),
-	    nome varchar(50) NOT NULL,
-	    descricao varchar(50),
-	    PRIMARY KEY(id_conquista, id_usuario)
+	    nome varchar(100) NOT NULL,
+	    descricao varchar(100),
+        liberada varchar(10),
+	    PRIMARY KEY(id_conquista, id_jogo, id_usuario)
         );
     """),
     "promocao" : ("""
         CREATE TABLE promocao (
-	    id_promocao integer PRIMARY KEY,
+	    id_promocao serial PRIMARY KEY,
 	    nome varchar(50) NOT NULL UNIQUE,
-	    descricao varchar(100)
+	    descricao varchar(500)
         );
     """),
     "jogo_promocao" : ("""
@@ -124,15 +126,14 @@ create = {
     """),
     "midia" : ("""
         CREATE TABLE midia (
-        id_midia integer PRIMARY KEY,
+        id_midia serial PRIMARY KEY,
         id_jogo integer REFERENCES jogo (id_jogo),
-        arquivo bytea NOT NULL,
         tipo varchar(25) NOT NULL
         );
     """),
     "expansao" : ("""
         CREATE TABLE expansao (
-        id_expansao integer PRIMARY KEY,
+        id_expansao serial PRIMARY KEY,
         id_jogo integer REFERENCES jogo (id_jogo),
         nome varchar(100) NOT NULL,
         descricao varchar(500),
