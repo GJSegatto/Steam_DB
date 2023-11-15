@@ -258,7 +258,8 @@ insercao = {
         INSERT INTO compra VALUES (100014, 50004, 0, 'Comprov_15');
         INSERT INTO compra VALUES (100015, 50005, 0, 'Comprov_16');
         INSERT INTO compra VALUES (100016, 50006, 123.98, 'Comprov_17');
-        INSERT INTO compra VALUES (100017, 50007, 0, 'Comprov_18');
+        INSERT INTO compra VALUES (100017, 50007, 0, 'Comprov_18');      
+        INSERT INTO compra VALUES (100019, 50009, 128, 'Comprov_19')
     """),
     "compra_expansao" : ("""
         INSERT INTO compra_expansao VALUES (100001, 5003, '2020-10-22 10:43:05');
@@ -266,7 +267,8 @@ insercao = {
         INSERT INTO compra_expansao VALUES (100004, 5016, '2023-01-03 22:10:55');
         INSERT INTO compra_expansao VALUES (100008, 5006, '2022-06-22 15:00:00');
         INSERT INTO compra_expansao VALUES (100013, 5012, '2023-03-15 03:10:43');
-        INSERT INTO compra_expansao VALUES (100013, 5010, '2023-03-15 03:10:43');
+        INSERT INTO compra_expansao VALUES (100013, 5010, '2023-03-15 03:10:43');      
+        INSERT INTO compra_expansao VALUES (100019, 5016, '2023-08-08 16:44:08');
     """),
     "compra_jogo" : ("""
         INSERT INTO compra_jogo VALUES (100001, 1012, '2020-10-22 10:43:05');
@@ -283,6 +285,7 @@ insercao = {
         INSERT INTO compra_jogo VALUES (100012, 1006, '2020-08-12 10:05:26');
         INSERT INTO compra_jogo VALUES (100013, 1016, '2023-03-15 03:10:43');
         INSERT INTO compra_jogo VALUES (100014, 1020, '2021-07-23 18:10:49');
+        INSERT INTO compra_jogo VALUES (100015, 1006, '2022-05-20 14:49:59');
         INSERT INTO compra_jogo VALUES (100016, 1013, '2021-03-15 20:24:36');
         INSERT INTO compra_jogo VALUES (100016, 1009, '2021-03-15 20:24:36');
         INSERT INTO compra_jogo VALUES (100017, 1001, '2023-11-14 16:01:50');

@@ -19,11 +19,11 @@ try:
         elif opcao == 4:
             fc.consulta_total_genero()    
         elif opcao == 5:
-            fc.op5()    
+            fc.consulta_total_gasto_usuario()    
         elif opcao == 6:
-            fc.op6()   
+            fc.consulta_total_expansoes_vendidas()   
         elif opcao == 7:
-            print("n tem 7 ainda")   
+            fc.consulta_extra_raridades()  
         else:
             print("Escolha um valor entre 0 e 7.")
 
