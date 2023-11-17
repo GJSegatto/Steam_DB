@@ -22,8 +22,9 @@ def menu():
     [3] - Popular Todas as Tabelas.
     [4] - Consulta 1: Distribuição de Gêneros.
     [5] - Consulta 2: Total Gasto por Usuário.
-    [6] - Consulta 3: Total Vendido em Expansões.
+    [6] - Consulta 3: Total Vendido em Expansões no ano de 2023.
     [7] - Consulta Extra: Total de Itens com Raridade >= 3 por Usuário.
+    [8] - Mostrar uma Tabela Específica.
     [0] - Sair.
     """
 )
@@ -36,7 +37,6 @@ def monta_grafico(data, linha, coluna, titulo):
     plt.title(titulo)
     plt.get_current_fig_manager().full_screen_toggle()
     plt.show()
-
 
 def criaTabelas():
     print("Iniciando criação das tabelas...")
@@ -88,7 +88,6 @@ def consulta_total_genero():
 
     except psycopg2.Error as err:
         print("Não foi possível concluir a consulta por conta do seguinte erro: \n", err.args)
-        cnx.rollback()
 
 
 def consulta_total_gasto_usuario():
@@ -107,10 +106,9 @@ def consulta_total_gasto_usuario():
 
     except psycopg2.Error as err:
         print("Não foi possível concluir a consulta por conta do seguinte erro: \n", err.args)
-        cnx.rollback()
 
 def consulta_total_expansoes_vendidas():
-    print("Terceira Consulta: Total de valor vendido em DLC's disponíveis na loja.")
+    print("Terceira Consulta: Total de valor vendido em DLC's disponíveis na loja no ano de 2023.")
     
     query = consultas.total_expansoes_vendidas
     try:
@@ -124,7 +122,6 @@ def consulta_total_expansoes_vendidas():
 
     except psycopg2.Error as err:
         print("Não foi possível concluir a consulta por conta do seguinte erro: \n", err.args)
-        cnx.rollback()
 
 def consulta_extra_raridades():
     print("Consulta Extra! Essa consulta mostra a quantidade de itens com raridade maior ou igual a 3 que usuários possuem.")
@@ -140,4 +137,24 @@ def consulta_extra_raridades():
         
     except psycopg2.Error as err:
         print("Não foi possível concluir a consulta por conta do seguinte erro: \n", err.args)
-        cnx.rollback()
+
+def mostrar_tabela():
+    print("\nSELECIONAR UMA DAS TABELAS: ")
+    
+    for table_name in criacao.create:
+        print("\t" + table_name)
+    try:
+        name = input(str("\nDigite o nome da tabela que deseja consultar: ")).lower()
+        query_colunas = "SELECT COLUMN_NAME FROM information_schema.columns WHERE TABLE_NAME = '{}';".format(name)
+        cursor.execute(query_colunas)
+        nomes_colunas = cursor.fetchall()
+        colunas = list(sum(nomes_colunas, ()))
+        query = "select * from " + name
+        cursor.execute(query)
+    except psycopg2.Error as err:
+        print("Não foi possível concluir a consulta por conta do seguinte erro: \n", err.args)
+    else:
+        print("\nTABELA {}\n".format(name))
+        myresult = cursor.fetchall()
+        data = pd.DataFrame(myresult, columns=colunas)
+        print(data)

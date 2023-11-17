@@ -23,7 +23,9 @@ try:
         elif opcao == 6:
             fc.consulta_total_expansoes_vendidas()   
         elif opcao == 7:
-            fc.consulta_extra_raridades()  
+            fc.consulta_extra_raridades()
+        elif opcao == 8:
+            fc.mostrar_tabela()  
         else:
             print("Escolha um valor entre 0 e 7.")
 
