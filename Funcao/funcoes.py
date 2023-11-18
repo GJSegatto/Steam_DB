@@ -16,7 +16,7 @@ def fechamento():
 
 def menu():
     print("""
-        --- STEAMZERA ---
+        --- PUMPKIN STORE ---
     [1] - Criar Todas as Tabelas.
     [2] - Dropar Todas as Tabelas.
     [3] - Popular Todas as Tabelas.
