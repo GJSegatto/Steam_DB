@@ -1,9 +1,7 @@
-from Imagens import Imagens
-
 insercao = {
     "usuario" : ("""
         INSERT INTO usuario VALUES (50001, 'AkeleMito', 'gabrieljulianigj@gmail.com', 'senhasegura1', 'Gabriel Segatto', 'Aquele Mesmo', 5);
-        INSERT INTO usuario VALUES (50002, 'DenteDeSabio', 'desntedesabio@gmail.com', 'senhasegura2', 'Jonathan Maciel do Santos', 'O maior jogadorde vava do sudeste do meu bairro', 2);
+        INSERT INTO usuario VALUES (50002, 'DenteDeSabio', 'desntedesabio@gmail.com', 'senhasegura2', 'Jonathan Maciel do Santos', 'O maior jogador de vava do sudeste do meu bairro', 2);
         INSERT INTO usuario VALUES (50003, 'BoloFofo', 'nicolasgiaboeski@gmail.com', 'senhasegura3', 'Nicolas Giaboeski', 'widepeepoHappy', 33);
         INSERT INTO usuario VALUES (50004, 'BotafoguenseTriste', 'bota.fogo.triste@gmail.com', 'senhasegura4', 'Fabrício Acevedo', NULL, 456);
         INSERT INTO usuario VALUES (50005, 'TheArmyBR', 'joseph.ed@gmail.com', 'senhasegura5', 'José Edvaldo', 'A seven nations army couldnt hold me back!', 20);
@@ -218,21 +216,21 @@ insercao = {
         INSERT INTO amigo VALUES (50009, 50010);
     """),
     "avaliacao" : ("""
-        INSERT INTO avaliacao VALUES (default, 1009, 50004, 'Vim do presente avisar que o trailer do GTA VI (6) vai sair em dezembro de 2023', 5);
-        INSERT INTO avaliacao VALUES (default, 1009, 50007, 'JOGO MUITO BOM', 4);
-        INSERT INTO avaliacao VALUES (default, 1006, 50002, 'Lee, oh Lee, o que foi que eu fiz? Olha só para você, nem está consciente e continua se empenhando em mostrar para o mundo o que pode fazer. Ele está nocauteado, tudo que o mantém de pé é o poder de sua vontade.', 2);
-        INSERT INTO avaliacao VALUES (default, 1006, 50001, 'O jogo tem a comunidade mais tóxica que eu já presenciei. Se for jogar, jogue com os amigos/conhecidos ou simplesmente desabilite o chat. O MMR (Matchmaking) do jogo também é quebrado e ruim.', 1);
-        INSERT INTO avaliacao VALUES (default, 1004, 50001, 'Eu criei uma carta chamada Manoel Gomes. Acho que só isso já devia ser o suficiente pra te fazer querer jgoar.', 5);
-        INSERT INTO avaliacao VALUES (default, 1004, 50006, 'INSCRYPTION é o melhor jogo de cartas que já joguei até agora. Tem uma trama excelente e apesar de ser apenas um jogo de cartas, tem uma gameplay viciante no qual nunca se enjoara. Compre fora da promoção porque vale cada centavo! Uma experiencia unica.', 5);
-        INSERT INTO avaliacao VALUES (default, 1017, 50007, 'Trilogia perfeita tanto versão original e também esse ótimo remake, única diferença além dos gráficos é que os pulos exige mais precisão nas plataformas tornado mais difícil que o original. Sobre a não recomendação... é mais um protesto por não lançarem o CRASH TEAM RACING NITRO-FUELED para PC... Ta de tiração Activision. _|_', 3);
-        INSERT INTO avaliacao VALUES (default, 1017, 50004, 'Muito bom, agora pra ficar melhor só fazendo um remaster do Crash Twinsanity de 2004', 4);
-        INSERT INTO avaliacao VALUES (default, 1016, 50010, 'O jogo tinha tudo para ser bom, porém a empresa não trabalha direito contra scripts, só quer saber de ganhar dinheiro com skins de fada', 1);
-        INSERT INTO avaliacao VALUES (default, 1016, 50008, 'Estou muito feliz com minha nova skin de Irelia, porém podia ser mais barato', 3);
-        INSERT INTO avaliacao VALUES (default, 1018, 50001, 'Jogo muito bom, uma pena não tem mais server BR pra jogar solo, ou duo', 3);
-        INSERT INTO avaliacao VALUES (default, 1018, 50003, 'PUBG LITE ERA MELHOR', 1);
-        INSERT INTO avaliacao VALUES (default, 1021, 50008, 'Depois de jogar o remake do RE4 consigo entender porque esse foi tão criticado. Sem analisar como um remake, se torna um jogo divertido (apesar de curto). Mas, de fato, é muito triste saber que cortaram tantas coisas importantes do jogo original. Ainda assim, vale a pena jogar e pegar numa boa promoção.', 4);
-        INSERT INTO avaliacao VALUES (default, 1021, 50009, 'Mudou tudo e é muito curto o tempo de jogo', 1);
-        INSERT INTO avaliacao VALUES (default, 1021, 50010, 'Terminei RE2 e fui sedento pro RE3 achando que ia ser tão bom quanto, porém me deparei com essa decepção.', 2);
+        INSERT INTO avaliacao VALUES (80000, 1009, 50004, 'Vim do presente avisar que o trailer do GTA VI (6) vai sair em dezembro de 2023', 5);
+        INSERT INTO avaliacao VALUES (80001, 1009, 50007, 'JOGO MUITO BOM', 4);
+        INSERT INTO avaliacao VALUES (80002, 1006, 50002, 'Lee, oh Lee, o que foi que eu fiz? Olha só para você, nem está consciente e continua se empenhando em mostrar para o mundo o que pode fazer. Ele está nocauteado, tudo que o mantém de pé é o poder de sua vontade.', 2);
+        INSERT INTO avaliacao VALUES (80003, 1006, 50001, 'O jogo tem a comunidade mais tóxica que eu já presenciei. Se for jogar, jogue com os amigos/conhecidos ou simplesmente desabilite o chat. O MMR (Matchmaking) do jogo também é quebrado e ruim.', 1);
+        INSERT INTO avaliacao VALUES (80004, 1004, 50001, 'Eu criei uma carta chamada Manoel Gomes. Acho que só isso já devia ser o suficiente pra te fazer querer jgoar.', 5);
+        INSERT INTO avaliacao VALUES (80005, 1004, 50006, 'INSCRYPTION é o melhor jogo de cartas que já joguei até agora. Tem uma trama excelente e apesar de ser apenas um jogo de cartas, tem uma gameplay viciante no qual nunca se enjoara. Compre fora da promoção porque vale cada centavo! Uma experiencia unica.', 5);
+        INSERT INTO avaliacao VALUES (80006, 1017, 50007, 'Trilogia perfeita tanto versão original e também esse ótimo remake, única diferença além dos gráficos é que os pulos exige mais precisão nas plataformas tornado mais difícil que o original. Sobre a não recomendação... é mais um protesto por não lançarem o CRASH TEAM RACING NITRO-FUELED para PC... Ta de tiração Activision. _|_', 3);
+        INSERT INTO avaliacao VALUES (80007, 1017, 50004, 'Muito bom, agora pra ficar melhor só fazendo um remaster do Crash Twinsanity de 2004', 4);
+        INSERT INTO avaliacao VALUES (80008, 1016, 50010, 'O jogo tinha tudo para ser bom, porém a empresa não trabalha direito contra scripts, só quer saber de ganhar dinheiro com skins de fada', 1);
+        INSERT INTO avaliacao VALUES (80009, 1016, 50008, 'Estou muito feliz com minha nova skin de Irelia, porém podia ser mais barato', 3);
+        INSERT INTO avaliacao VALUES (80010, 1018, 50001, 'Jogo muito bom, uma pena não tem mais server BR pra jogar solo, ou duo', 3);
+        INSERT INTO avaliacao VALUES (80011, 1018, 50003, 'PUBG LITE ERA MELHOR', 1);
+        INSERT INTO avaliacao VALUES (80012, 1021, 50008, 'Depois de jogar o remake do RE4 consigo entender porque esse foi tão criticado. Sem analisar como um remake, se torna um jogo divertido (apesar de curto). Mas, de fato, é muito triste saber que cortaram tantas coisas importantes do jogo original. Ainda assim, vale a pena jogar e pegar numa boa promoção.', 4);
+        INSERT INTO avaliacao VALUES (80013, 1021, 50009, 'Mudou tudo e é muito curto o tempo de jogo', 1);
+        INSERT INTO avaliacao VALUES (80014, 1021, 50010, 'Terminei RE2 e fui sedento pro RE3 achando que ia ser tão bom quanto, porém me deparei com essa decepção.', 2);
     """),
     "midia" : ("""
         INSERT INTO midia VALUES(default, 1017, 'Imagem', 'path1');

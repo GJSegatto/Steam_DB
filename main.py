@@ -1,7 +1,9 @@
 from Funcao import funcoes as fc
-
+1
 try:
     fc.inicializacao()
+    fc.drop_tabelas()
+    fc.fechamento()
     opcao = 1
 
     while opcao != 0:
@@ -25,7 +27,13 @@ try:
         elif opcao == 7:
             fc.consulta_extra_raridades()
         elif opcao == 8:
-            fc.mostrar_tabela()  
+            fc.mostrar_tabela()
+        elif opcao == 9:
+            fc.atualizar_valor() 
+        elif opcao == 10:
+            fc.deletar_valor()
+        elif opcao == 11:
+            fc.teste_delete()
         else:
             print("Escolha um valor entre 0 e 7.")
 
